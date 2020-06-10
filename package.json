@@ -2,7 +2,7 @@
   "name": "sitopersonakle",
   "version": "1.0.0",
   "description": "sito personale progetto",
-  "main": "index.js",
+  "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
