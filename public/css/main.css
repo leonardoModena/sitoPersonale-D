@@ -1,0 +1,40 @@
+:root{
+    margin: 0;
+    padding: 0;
+    display: block;
+    font-size: 18px;
+}
+body{
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+*{
+    display: block;
+}
+title{
+    display: none;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    position: -webkit-sticky;
+}
+
+.menu-list{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.menu-item{
+    margin: 0 1rem 0 1rem;
+}
+
+.content-first-page{
+    display: flex;
+    align-content: baseline;
+    justify-content: center;
+    height: 100vh;
+}
