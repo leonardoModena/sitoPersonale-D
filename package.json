@@ -1,0 +1,24 @@
+{
+  "name": "sitopersonakle",
+  "version": "1.0.0",
+  "description": "sito personale progetto",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leonardoModena/progettoPersonale-D.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leonardoModena/progettoPersonale-D/issues"
+  },
+  "homepage": "https://github.com/leonardoModena/progettoPersonale-D#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fullpage.js": "^3.0.8",
+    "jquery": "^3.5.1"
+  }
+}
