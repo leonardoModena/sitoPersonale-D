@@ -1,15 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
 :root{
     margin: 0;
     padding: 0;
     display: block;
     font-size: 18px;
-}
-body{
-    display: block;
-    margin: 0;
-    padding: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 *{
+    margin: 0;
+    padding: 0;
     display: block;
 }
 title{
@@ -18,7 +17,12 @@ title{
 .navbar{
     display: flex;
     justify-content: space-between;
-    position: -webkit-sticky;
+    position: absolute;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    z-index: 5;
+    align-content: center;
+    margin: 1rem;
 }
 
 .menu-list{
@@ -37,4 +41,21 @@ title{
     align-content: baseline;
     justify-content: center;
     height: 100vh;
+    background-image: url(/img/chill.jpg);
+}
+
+.card{
+    left: 40rem;
+    right: 5rem;
+    top: 20rem;
+    position: absolute;
+    transition: 0.7s all ease;
+}
+
+.moveUp{
+    transform: translateY(-15rem);
+}
+
+.moveDown{
+    transform: translateY(0)
 }
