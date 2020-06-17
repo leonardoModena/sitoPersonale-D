@@ -1,20 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
-:root{
+:root {
     margin: 0;
     padding: 0;
     display: block;
     font-size: 18px;
     font-family: 'Montserrat', sans-serif;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     display: block;
 }
-title{
+
+title {
     display: none;
 }
-.navbar{
+
+.navbar {
     display: flex;
     justify-content: space-between;
     position: absolute;
@@ -25,18 +28,18 @@ title{
     margin: 1rem;
 }
 
-.menu-list{
+.menu-list {
     display: flex;
     margin: 0;
     padding: 0;
     text-decoration: none;
 }
 
-.menu-item{
+.menu-item {
     margin: 0 1rem 0 1rem;
 }
 
-.content-first-page{
+.content-first-page {
     display: flex;
     align-content: baseline;
     justify-content: center;
@@ -44,18 +47,203 @@ title{
     background-image: url(/img/chill.jpg);
 }
 
-.card{
+.card {
+    font-size: 23px;
     left: 40rem;
-    right: 5rem;
+    right: 11rem;
     top: 20rem;
     position: absolute;
     transition: 0.7s all ease;
 }
 
-.moveUp{
+.moveUpText {
     transform: translateY(-15rem);
 }
 
-.moveDown{
+.moveDownText {
     transform: translateY(0)
+}
+
+.card-photo {
+    z-index: 10;
+    position: absolute;
+    top: 6rem;
+    left: 11rem;
+    width: 25rem;
+    height: 40rem;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-image: url(/img/ritratto.jpg);
+    transition: 1.4s all cubic-bezier(0.51, 0.21, 0.12, 1.07);
+}
+
+.moveUpPhoto {
+    transform: translateY(0) rotate(5deg);
+    opacity: 1;
+    left: 13rem;
+}
+
+.moveDownPhoto {
+    transform: rotateY(60deg) translateY(15rem);
+    opacity: 0.65;
+}
+
+.content-second-page {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.border-1 {
+    margin: auto;
+    align-self: center;
+    position: relative;
+    width: 85%;
+    height: 60%;
+    border: 3px solid aquamarine;
+}
+
+#slide1 {
+    background-color: rgb(30, 107, 81);
+}
+
+#slide2 {
+    background-color: brown;
+}
+
+#slide3 {
+    background-color: cornflowerblue;
+}
+
+.fp-controlArrow {
+    border: 1.4px solid white !important;
+    width: 1rem !important;
+    display: flex !important;
+    margin-top: auto !important;
+    transition: 0.3s all ease;
+}
+
+.fp-controlArrow.fp-next {
+    right: 3rem !important;
+}
+
+.fp-controlArrow.fp-prev {
+    left: 3rem !important;
+}
+
+.fp-controlArrow.fp-next:hover {
+    animation: moveRight 0.7s infinite;
+}
+
+.fp-controlArrow.fp-prev:hover {
+    animation: moveLeft 0.7s infinite;
+}
+
+@keyframes moveLeft {
+    50% {
+        transform: translateX(-5px)
+    }
+    100% {
+        transform: translateX(0px)
+    }
+}
+
+@keyframes moveRight {
+    50% {
+        transform: translateX(5px)
+    }
+    100% {
+        transform: translateX(0px)
+    }
+}
+
+.fallingBall {
+    animation: fallingBallAnimation 0.5s;
+}
+
+.staticBall {
+    left: 22rem;
+    top: 23rem;
+    border-radius: 100px;
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    background-color: aquamarine;
+    background-image: none;
+    transform: translateY(100vh);
+    transition: 1s all ease;
+}
+
+.openBall {
+    transform: translateY(100vh) scale3d(100, 100, 100);
+}
+
+@keyframes fallingBallAnimation {
+    20% {
+        width: 6rem;
+        height: 6rem;
+        border: none;
+        left: 17rem;
+        top: 18rem;
+    }
+    40% {
+        background-color: aquamarine;
+        background-image: none;
+    }
+    50% {
+        width: 3rem;
+        height: 3rem;
+        border: none;
+        left: 19rem;
+        top: 20rem;
+        background-color: aquamarine;
+        background-image: none;
+        border-top-left-radius: 32px;
+        -moz-border-radius-topleft: 32px;
+        -webkit-border-top-left-radius: 32px;
+        border-top-right-radius: 151px;
+        -moz-border-radius-topright: 151px;
+        -webkit-border-top-right-radius: 151px;
+        border-bottom-left-radius: 160px;
+        -moz-border-radius-bottomleft: 160px;
+        -webkit-border-bottom-left-radius: 160px;
+        border-bottom-right-radius: 143px;
+        -moz-border-radius-bottomright: 143px;
+        -webkit-border-bottom-right-radius: 143px;
+        transform: rotate(45deg);
+    }
+    100% {
+        left: 22rem;
+        top: 23rem;
+        border-top-left-radius: 32px;
+        -moz-border-radius-topleft: 32px;
+        -webkit-border-top-left-radius: 32px;
+        border-top-right-radius: 151px;
+        -moz-border-radius-topright: 151px;
+        -webkit-border-top-right-radius: 151px;
+        border-bottom-left-radius: 160px;
+        -moz-border-radius-bottomleft: 160px;
+        -webkit-border-bottom-left-radius: 160px;
+        border-bottom-right-radius: 143px;
+        -moz-border-radius-bottomright: 143px;
+        -webkit-border-bottom-right-radius: 143px;
+        width: 3rem;
+        height: 3rem;
+        border: none;
+        background-color: aquamarine;
+        background-image: none;
+        transform: translateY(100vh) rotate(45deg) scaleY(1);
+    }
+}
+
+.opacity0 {
+    opacity: 0 !important;
+}
+
+.distroyi {
+    display: none !important;
+}
+
+.create {
+    display: block !important;
 }
