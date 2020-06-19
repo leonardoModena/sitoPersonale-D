@@ -14,10 +14,10 @@
 
 <body>
     <nav class="navbar">
-        <div class="logo"><img src="" alt="" class="logo-img">DRASTIC</div>
+        <div class="logo" id="drasticLogo"></div>
         <ul class="menu-list">
             <li class="menu-item" id="moveAboutMe">ABOUT ME</li>
-            <li class="menu-item">MY WORKS</li>
+            <li class="menu-item" id="moveMyWorks">MY WORKS</li>
             <li class="menu-item">CONTATC ME</li>
         </ul>
     </nav>
@@ -26,8 +26,9 @@
     <div id="fullpage">
         <div class="section">
             <div class="content-first-page">
-                <img class="big-logo" src="" alt="">
-                <div class="didasc"><span>di LEONARDO MODENA</span></div>
+                <img class="big-logo" src="/img/loghi/big/lo.png" alt="logo-drastic">
+                <div class="didasc"><span>LEONARDO MODENA</span>
+                </div>
             </div>
         </div>
 
@@ -48,11 +49,25 @@
         </div>
 
         <div class="section project">
-            <div class="slide" id="slide1"></div>
+            <div class="slide" id="slide1">
+                <form class="formContact">
+                    <div class="field">
+                        <input type="email" name="email" class="input" id="">
+                        <label for="email" class="label">Email</label>
+                    </div>
+
+                    <div class="field">
+                        <input type="message" class="input" placeholder="">
+                        <label for="message" class="label">Your Message</label>
+                    </div>
+                </form>
+            </div>
             <div class="slide" id="slide2"></div>
             <div class="slide" id="slide3"></div>
         </div>
     </div>
+
+
 
     <script src="/js/jquery-3.5.1.js"></script>
     <script src="/js/fullpage.js"></script>
