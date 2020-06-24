@@ -13,6 +13,9 @@
 </head>
 
 <body>
+
+    <div id="video-background"></div>
+
     <nav class="navbar">
         <div class="logo" id="drasticLogo"></div>
         <ul class="menu-list">
@@ -22,11 +25,27 @@
         </ul>
     </nav>
 
+    <!--  <div class="card-contact-me">
+        <form class="formContact">
+            <div class="field">
+                <input type="email" name="email" class="input" id="">
+                <label for="email" class="label">Email</label>
+            </div>
+
+            <div class="field">
+                <input type="message" class="input" placeholder="">
+                <label for="message" class="label">Your Message</label>
+            </div>
+        </form>
+    </div>-->
+
+
+
 
     <div id="fullpage">
         <div class="section">
             <div class="content-first-page">
-                <img class="big-logo" src="/img/loghi/big/lo.png" alt="logo-drastic">
+                <img class="big-logo" src="/img/loghi/big/lo2.png" alt="logo-drastic">
                 <div class="didasc"><span>LEONARDO MODENA</span>
                 </div>
             </div>
@@ -34,42 +53,61 @@
 
         <div class="section">
             <div class="content-second-page">
-                <div class="border-1"></div>
-                <div class="card-photo moveDownPhoto"></div>
-                <div class="card moveUp">
-                    <div class="description-me">
-                        <span>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellendus quod,
-                            atque molestiae dolore nulla dolorum mollitia. Optio ut sapiente libero, recusandae deleniti
-                            praesentium, quis blanditiis officia, expedita asperiores numquam!
-                        </span>
+                <div class="border-container">
+                    <div class="border-1"></div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card-photo moveDownPhoto"></div>
+                    <div class="card moveUp">
+                        <div class="description-me">
+                            <span>ABOUT ME</span>
+                            <span>
+                                Ciao! Sono Leonardo, uno studente di informatica, appassionato di design.<br>
+                                Amo trasformare idee in servizi per le persone.<br>
+                                Mi impegno ogni giorno per trasformare ciò che amo nel mio lavoro.
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
         <div class="section project">
-            <div class="slide" id="slide1">
-                <form class="formContact">
-                    <div class="field">
-                        <input type="email" name="email" class="input" id="">
-                        <label for="email" class="label">Email</label>
+            <div class="ct-section-title">
+                <div>MY WORKS</div>
+            </div>
+            <div class="slide">
+                <div class="project-card" id="slide1">
+                    <div class="project-card-container">
+                        <img src="/img/project/bank.png" alt="bank-program-image" class="project-photo">
+                        <div class="project-description">
+                            <p class="project-title">BANK ACCOUNT</p>
+                            <P class="project-use-case"><span>USE CASE:</span><span>Gestione di una carta prepagata</span></P>
+
+                        </div>
                     </div>
 
-                    <div class="field">
-                        <input type="message" class="input" placeholder="">
-                        <label for="message" class="label">Your Message</label>
-                    </div>
-                </form>
+                </div>
             </div>
-            <div class="slide" id="slide2"></div>
-            <div class="slide" id="slide3"></div>
+            <div class="slide" id="slide2">
+                <div class="project-card">
+                    <div class="project-card-container">
+                        <div class="project-description">
+                            <p class="project-title">BANK ACCOUNT</p>
+                            <P class="project-use-case"><span>USE CASE:</span><span>Gestione di una carta prepagata</span></P>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </div>
 
 
 
     <script src="/js/jquery-3.5.1.js"></script>
+    <script src="/js/jquery.vide.js"></script>
     <script src="/js/fullpage.js"></script>
 
     <script src="/js/main.js"></script>
