@@ -10,6 +10,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='/css/main.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='/css/fullpage.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/hamburgers.css'>
 </head>
 
 <body>
@@ -21,23 +22,33 @@
         <ul class="menu-list">
             <li class="menu-item" id="moveAboutMe">ABOUT ME</li>
             <li class="menu-item" id="moveMyWorks">MY WORKS</li>
-            <li class="menu-item">CONTATC ME</li>
+            <li class="menu-item" id="contactMe">CONTATC ME</li>
         </ul>
+        <button class="hamburger hamburger--collapse" type="button" id="dropdown-btn">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
     </nav>
 
-    <!--  <div class="card-contact-me">
-        <form class="formContact">
-            <div class="field">
-                <input type="email" name="email" class="input" id="">
-                <label for="email" class="label">Email</label>
-            </div>
+    <div class="dd-menu">
+        <div class="card-contact-me">
+            <span>CONTATTAMI</span>
+            <form class="formContact">
+                <div class="field">
+                    <input type="email" name="email" class="input" id="">
+                    <label for="email" class="label">Email</label>
+                </div>
 
-            <div class="field">
-                <input type="message" class="input" placeholder="">
-                <label for="message" class="label">Your Message</label>
-            </div>
-        </form>
-    </div>-->
+                <div class="field">
+                    <input type="message" class="input" placeholder="">
+                    <label for="message" class="label">Your Message</label>
+                </div>
+            </form>
+            <button>INVIA</button>
+        </div>
+    </div>
+
 
 
 
@@ -53,20 +64,20 @@
 
         <div class="section">
             <div class="content-second-page">
-                <div class="border-container">
-                    <div class="border-1"></div>
-                </div>
-
                 <div class="card-container">
-                    <div class="card-photo moveDownPhoto"></div>
-                    <div class="card moveUp">
-                        <div class="description-me">
-                            <span>ABOUT ME</span>
-                            <span>
-                                Ciao! Sono Leonardo, uno studente di informatica, appassionato di design.<br>
-                                Amo trasformare idee in servizi per le persone.<br>
-                                Mi impegno ogni giorno per trasformare ciò che amo nel mio lavoro.
-                            </span>
+                    <div class="border-container">
+                        <div class="border-1">
+                            <div class="card-photo moveDownPhoto"></div>
+                            <div class="card moveUp">
+                                <div class="description-me">
+                                    <span>ABOUT ME</span>
+                                    <span>
+                                        Ciao! Sono Leonardo, uno studente di informatica, appassionato di design.<br>
+                                        Amo trasformare idee in servizi per le persone.<br>
+                                        Mi impegno ogni giorno per trasformare ciò che amo nel mio lavoro.
+                                    </span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -77,12 +88,13 @@
                 <div>MY WORKS</div>
             </div>
             <div class="slide">
-                <div class="project-card" id="slide1">
+                <div class="project-card">
                     <div class="project-card-container">
                         <img src="/img/project/bank.png" alt="bank-program-image" class="project-photo">
                         <div class="project-description">
                             <p class="project-title">BANK ACCOUNT</p>
-                            <P class="project-use-case"><span>USE CASE:</span><span>Gestione di una carta prepagata</span></P>
+                            <P class="project-use-case"><span>USE CASE:</span><span>Gestione di una carta
+                                    prepagata</span></P>
 
                         </div>
                     </div>
@@ -94,7 +106,8 @@
                     <div class="project-card-container">
                         <div class="project-description">
                             <p class="project-title">BANK ACCOUNT</p>
-                            <P class="project-use-case"><span>USE CASE:</span><span>Gestione di una carta prepagata</span></P>
+                            <P class="project-use-case"><span>USE CASE:</span><span>Gestione di una carta
+                                    prepagata</span></P>
 
                         </div>
                     </div>
